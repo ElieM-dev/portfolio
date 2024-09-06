@@ -1,0 +1,240 @@
+#hero {
+    background-image: url('../img/Screenshot\ 2024-09-03\ 124913.png'); /* Ensure the path to your image is correct */
+    background-size: cover; /* Cover ensures the image fills the space */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    height: 100vh; /* Set the body height to 100vh */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scrolling if the content overflows the viewport */
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust transparency as needed */
+    z-index: 1; /* Ensure it's above the background but below content */
+}
+
+#wrapper {
+    display: flex; /* Flexbox for layout */
+}
+
+#sidebar{
+    width: 250px; /* Width of the sidebar */
+    position: fixed; /* Fixed position */
+    height: 100vh; /* Full viewport height */
+    z-index: 1000; /* Ensure it stays above other content */
+    background-color: transparent; /* Transparent background */
+    margin-top: 100px; /* Top margin for sidebar */
+    margin-left: 5px; /* Left margin for some spacing */
+}
+
+#sidebar .sidebar-heading {
+    padding: 10px; /* Padding around heading */
+    font-size: 1.5rem; 
+    color: white; /* Contrast text color */
+}
+
+#sidebar .list-group {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+#sidebar .list-group-item {
+    padding: 10px; /* Padding for items */
+    color: white; /* Text color for visibility */
+    background-color: transparent; /* No background */
+    border: none; /* Remove borders */
+    display: flex; /* Flex for alignment */
+    justify-content: center; /* Center SVG */
+    align-items: center; /* Center SVG */
+    width: 40px; /* Circle width */
+    height: 40px; /* Circle height */
+    border-radius: 50%; /* Circular shape */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+
+
+#sidebar .list-group-item:hover {
+    background-color: rgba(5, 99, 187,0.2); /* Hover effect */
+}
+
+#main-content {
+    margin-left: 100px; /* Space for the sidebar */
+
+    padding: 20px; /* Padding for content */
+    color: white; /* Text color */
+    height: calc(100vh - 150px); /* Adjust height minus the sidebar and margin */
+    display: flex; /* Flex container */
+    justify-content: baseline; /* Align items at baseline */
+    align-items: flex-start; /* Align items to start */
+    z-index: 4; /* Text content above background */
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 5rem; /* Heading size */
+    font-weight:bolder;/* Heading weight */
+    color: #040720; /* Heading color */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    color: #040720; /* Heading color */
+    font-size: 1.5rem; /* Font size */
+}
+h3{
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+}
+svg {
+    color: #040720; 
+    width: 20px; /* SVG width */
+    height: 20px; /* SVG height */
+    
+}
+.content{
+    margin-right: 20px;
+}
+.underline-span {
+    text-decoration: underline; /* Underline text */
+    text-decoration-color: #0563bb; /* Underline color */
+}
+#about .section-about{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-bottom:10px;
+}
+p{
+    font-family: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+}
+.web-titles{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: #040720;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #0563bb;
+    text-transform: capitalize;
+}
+#resume .section-resume{
+    margin-top: 40px;
+}
+#resume{
+    margin-left: 30px;
+}
+.item{
+    padding-left: 0; /* Remove default padding */
+    margin-left: 0; /* Remove default margin */
+    list-style: none;
+    padding: 0;
+    
+}
+.item li{
+    position: relative; /* Allow absolute positioning for icons */
+    padding-left: 2em; /* Space for the icon */
+    cursor: pointer; /* Changes mouse pointer to indicate clickable items */
+    margin: 10px 0;
+}
+.item li svg{
+    position: absolute; /* Position the SVG absolutely */
+    left: 0; /* Align to left */
+    color: #0563bb; /* Change color to Bootstrap primary color */
+    font-size: 1.5em; /* Increase size if needed */
+}
+.timeline{
+    position: relative;
+    padding-left:20px;
+   
+    border-left: 2px solid #0563bb  ;
+    margin-left: 20px;
+}
+
+.svg-resume{
+    width: 30px;
+    height:30px; /* SVG height */
+    margin-right: 5px;
+    color:#0563bb ;
+}
+.item .item2{
+    list-style: none;
+    padding: 0;
+}
+.item .item2 li{
+    position: relative; /* Positioning for the pseudo-element */
+    padding-left: 50px; /* Space for the custom bullet */
+    margin: 5px 0;
+}
+.item .item2 li::before {
+    content: ''; /* Creates the pseudo-element */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    width:5px; /* Width of the dot */
+    height: 5px; /* Height of the dot */
+    background-color:#0563bb ; /* Blue color */
+    border-radius: 50%; /* Make it a circle */
+    margin-left: 30px;
+}
+.btn-secondary{
+    background-color:#0563bb ;
+    color:white ;
+    border: 0;
+}
+.project1{
+    margin-left: 5px;
+}
+.project2{
+    margin-left: 120px;
+}
+
+#footer .svgfooter{
+    color:#0563bb;
+}
+.imageabout{
+    margin-right: 40px;
+}
+.majortitle{
+    
+    font-family: "Raleway", sans-serif;
+    color: #040720;
+    font-size: 2rem;
+}
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    h2 {
+        font-size:1rem; /* Even smaller font size for mobile */
+    }
+   #resume{
+    margin-left: 0;
+    padding: 0;
+   }
+   .project2{
+    margin-left: 0;
+    padding: 0;
+   }
+   .project1{
+    margin-left: 0;
+    padding: 0;
+
+   }
+  .imageabout{
+    margin-right: 0;
+  }
+
+}
+

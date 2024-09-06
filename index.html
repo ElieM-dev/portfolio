@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Transparent Sidebar Example</title>
+</head>
+<body>
+  <!--hero section-->
+<section id="hero" class="hero section">
+<div id="wrapper" class="d-flex">
+    <div id="sidebar" style="width: 4rem;">
+        <ul class="list-group nav nav-pills nav-flush flex-column mb-auto text-center">
+            <li class="nav-item">
+              <a href="#hero" class="rounded-circle list-group-item nav-link py-3 mb-2 border-bottom rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+                  <svg xmlns="http://www.w3.org/2000/svg"  height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                      <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                    </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="rounded-circle list-group-item nav-link py-3 mb-2 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
+                  <svg xmlns="http://www.w3.org/2000/svg"  height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#resume" class="rounded-circle list-group-item nav-link py-3 mb-2 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
+                  <svg xmlns="http://www.w3.org/2000/svg"  height="20" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+                      <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+                    </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#projects" class="rounded-circle list-group-item nav-link py-3 mb-2 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
+                  <svg xmlns="http://www.w3.org/2000/svg"  height="20" fill="currentColor" class="bi bi-hdd-stack" viewBox="0 0 16 16">
+                      <path d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2z"/>
+                      <path d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+                      <path d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                    </svg>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#contactme" class="rounded-circle list-group-item nav-link py-3 mb-2 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Customers" data-bs-original-title="Customers">
+                  <svg xmlns="http://www.w3.org/2000/svg"  height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                    </svg>
+              </a>
+            </li>
+          </ul> 
+    </div>
+    <div id="main-content" class="row flex-grow-1 justify-content-start align-items-center" style="min-height: 100vh;"> <!-- Center the content -->
+      <div class="col-12 "> <!-- Centered text -->
+          <h1 class="display-4">Elie Mouawad</h1> <!-- Using Bootstrap display classes -->
+          <h2 class="display-6">I'm A <span class="underline-span">Developer</span></h2>
+      </div>
+  </div>
+  
+</div>
+</section>
+<!-- about section -->
+<section id="about" class="about section">
+
+  <!-- Section Title -->
+  <div class="container section-about ">
+    <h2 class="web-titles">About</h2>
+    <p class="pt-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container " >
+
+    <div class="row  align-items-start justify-content-center">
+      <div class="col-lg-3 imageabout">
+        <img src="assets/img/IMG_20230816_145614_768.png" class="img-fluid" style="max-width: 100%; height: auto;"alt="">
+      </div>
+      <div class="col-lg-8 content">
+        <h3 class="majortitle">Web Developer</h3>
+        <p class="fst-italic py-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li>Birthday:</strong>14 Jan 1993</span></li>
+              <li>Website:</strong> www.example.com</span></li>
+              <li>Phone:</strong> +961 76302369</span></li>
+              <li>City:</strong> Byblos, Lebanon</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li> <strong>Age:</strong> 31</li>
+              <li> <strong>Degree:</strong> Bachelor</li>
+              <li> <strong>Email:</strong> eliemouawad@outlook.com</li>
+              <li> <strong>Freelance:</strong> Available</li>
+            </ul>
+          </div>
+        </div>
+        <p class="py-4">
+          Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+          Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--start of section resume-->
+<section id="resume" class="resume section">
+
+<!--title of the section-->
+<div class="container section-Resume mt-3 ">
+  <h2 class="web-titles">Resume</h2>
+</div><!-- End Section Title -->
+<div class="container row py-4 row-cols-1 row-cols-lg-3 justify-content-center ">
+  <div class="col-lg-4 d-flex align-items-start ">
+    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex  justify-content-center ">
+      
+    </div>
+    <div class="timeline">
+      <h3 class="fs-2 text-body-emphasis"><svg class="svg-resume" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+      </svg>Education</h3>
+      
+    <ul class="item">
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+        </svg><h3>The Complete 2024 Web Development Bootcamp Course by Dr.Angela Yu</h3>
+        <ul class="item2">
+          <li>
+        Udemy,2024
+        </li></ul>
+      </li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+        </svg><h3>Fitness Expert Diploma</h3>
+        <ul class="item2">
+        <li>StepAhead Sports School,2021</li>
+        </ul>
+      </li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+        </svg><h3>Bachelor Of Science In Computer Science</h3>
+         <ul class="item2">
+          <li>Arts, Sciences, and Technology University In Lebanon,2017</li>
+        </ul> 
+      </li>        
+    </ul>
+    </div>
+  </div>
+  <div class="col-lg-5 d-flex align-items-start ">
+    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex  justify-content-center ">
+      
+    </div>
+    <div class="timeline">
+      <h3 class="fs-2 text-body-emphasis"><svg class="svg-resume"  xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-cpu-fill" viewBox="0 0 16 16">
+        <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+        <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5"/>
+      </svg>Work Experience</h3>
+      
+    <ul class="item ">
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+        </svg><h3>Immigration Officer<br /> 
+        Beirut Rafic Hariri International Airport(2018-present)</h3>
+        <ul class="item2">
+            <li>Reviewing applications for visas and other travel documents.</li>
+            <li>Interviewing Applicants to verify the eligibilty of individuals for entry.</li>
+        </ul>
+        </li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+        </svg><h3>Tennis Coach <br />
+            Tennis Inc Academy(2020-2023)</h3>
+            <ul class="item2">
+                <li>Conducting individual and group tennis lessons.</li>
+                <li>Assessing students performance to identify areas for improvement.</li>
+                <li>Providing emotional and mental support to keep students motivated and engaged.</li>
+            </ul>
+        
+        </li>
+    </ul>
+    </div>
+  </div>
+  <div class="col-lg-3 d-flex align-items-start">
+    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex  justify-content-center ">
+      
+    </div>
+    <div class="timeline">
+      
+      <h3 class="fs-2 text-body-emphasis"><svg class="svg-resume" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+      </svg>Skills</h3>
+      
+      <ul class="item timeline-item" >
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+          </svg><h3>Hard Skills</h3></li>
+          <ul class="item2">
+              <li >HTML</li>
+              <li >CSS</li> 
+              <li>JavaScript</li>
+              <li>SQL</li>
+          </ul>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+          </svg><h3>Soft Skills</h3></li>
+          <ul class=item2>
+              <li>Communication</li>
+              <li>Teamwork</li>
+              <li>Problem-Solving</li>
+              <li>Time Management</li>
+              <li>Adaptability</li>
+          </ul>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+          </svg><h3>Language Skills</h3></li>
+          <ul class="item2">
+              <li>Arabic</li>
+              <li>English</li>
+              <li>French</li>
+          </ul>
+      </ul>
+     
+    </div>
+  </div>
+</div>
+</section>
+<!--start of section projects-->
+<section id="projects" class="projects-section">
+  <!--title of the section-->
+<div class="container section-projects mt-3 ">
+  <h2 class="web-titles">projects</h2>
+</div><!-- End Section Title -->
+  
+<div class="container marketing justify-content-center mt-4">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-5 project1">
+      <img src="./assets/img/project1.png" alt="project 1 picture" height="350px" width="450px">
+      <h2 class="fw-normal">TinDog Project</h2>
+      <p>I created a website same as tinder but for dogs it helps different dogs to meet together.</p>
+      <p><a class="btn btn-secondary" href="https://eliem-dev.github.io/TinDog/" target="_blank" rel="noopener noreferrer">View project »</a></p>
+    </div>
+    <div class="col-lg-5 project2">
+      <img src="./assets/img/project2.png" alt="project 2 picture" height="350px" width="450px" >
+      <h2 class="fw-normal">Deleviry Company website</h2>
+      <p>It's a website for a delivery company that help customers know all the services of this company.  </p>
+      <p><a class="btn btn-secondary" href="https://eliem-dev.github.io/move-with-elie/" target="_blank" rel="noopener noreferrer">View project »</a></p>
+    </div>
+  </div><!-- /.row -->
+</div>
+</section>
+<section id="contactme" class="contact-me-section">
+  <!--title of the section-->
+<div class="container section-contactme mt-3 ">
+  <h2 class="web-titles">Contact Me</h2>
+</div><!-- End Section Title -->
+  <form class="container justify-content-center mt-4">
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
+    </div>
+    <div class="my-3">
+      <input type="email" class="form-control" placeholder="Email address" aria-label="Email address" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Message</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-secondary">Submit</button>
+  </form>
+  
+</section>
+<div class="container">
+  <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Elie Mouawad</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="svgfooter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+      </svg></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="svgfooter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+      </svg></a></li>
+  </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
